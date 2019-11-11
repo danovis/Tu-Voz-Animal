@@ -1,0 +1,69 @@
+<body>
+
+<div class="container">
+    <div class="row justify-content-center mt-4 pt-5 ">
+        <div class="col-md-7">
+                <h1 class="display-9 ">Añadir Mascota </h1>
+                <hr class="bg-info">
+                <p class="text-danger small">Todos los Campos son obligatorios.</p>
+        
+    
+   
+        <div class="row form-group">
+                       <label class="col-form-label col-md-4">Nombre:</label> 
+                       <div class="col-md-8">
+                               <input [(ngModel)]="mascota.nombre" class="form-control" placeholder="Nombre Mascota" type="text"/>
+                       </div>
+           </div>
+       
+       
+       
+       <div class="row form-group">
+           
+              <label class="col-form-label col-md-4">Sexo:</label>
+                    <div class="col-md-8">
+                        <select [(ngModel)]="mascota.sexo" class="form-control"  type="text" >
+                            
+                               <option>M</option>
+                               <option>F</option>
+                       </select>
+                    </div>   
+            </div>
+       
+           
+       
+       <div class="row form-group">
+           <label class="col-form-label col-md-4">Raza:</label>
+             <div class="col-md-8">
+                   <input [(ngModel)]="mascota.raza" class="form-control" placeholder="digite La Raza " type="text" />    
+            </div>
+       </div>
+       
+       
+           <div class="row form-group">
+           
+           <label class="col-form-label  col-md-4">Tipo Mascota:</label>
+               <div class="col-md-8">
+                    <select [(ngModel)]="mascota.tipomascota" class="form-control"  type="text">
+                       <option>Gato</option>
+                       <option>Perro</option>
+                   </select>
+               </div>
+           </div>
+       
+       
+           <div class="row form-group">
+               <label class="col-form-label col-md-4" for="comment">Descripcion:</label>
+               <div class="col-md-8">
+                       <textarea [(ngModel)]= "mascota.descripcion" class="form-control" rows="3" id="descripcion" name="text"> </textarea>
+               </div>        
+           </div>
+
+           <div class=" row form-group">
+           <button (click)="add()" class="btn btn-dark">Agregar</button>
+           </div>
+    
+        </div>
+    </div>
+</div>
+</body>

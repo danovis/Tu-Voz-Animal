@@ -1,0 +1,23 @@
+<p>Estas son Nuestras Mascotas </p>
+<div>
+    <table class="table ">
+      <thead class="thead-dark">
+        <tr>
+          <th>Nombre</th>
+          <th>Sexo</th>
+          <th>Raza</th>
+          <th>Tipo Mascota</th>
+          <th>Descripcion</th>
+  
+        </tr>
+      </thead>
+      <tr *ngFor="let mascota of mascotas">
+        <td>{{mascota.nombre}}</td>
+        <td>{{mascota.sexo}}</td>
+        <td>{{mascota.raza}}</td>
+        <td>{{mascota.tipomascota}}</td>
+        <td>{{mascota.descripcion}}</td>
+
+      </tr>
+    </table>
+  </div>

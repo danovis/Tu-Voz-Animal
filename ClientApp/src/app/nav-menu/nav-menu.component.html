@@ -1,0 +1,52 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm bg-dark navbar-dark "
+  >
+    <div class="container">
+        <img src="https://pbs.twimg.com/profile_images/803631500079951872/jtgoqRzm_400x400.jpg" width="50"> 
+
+      <a class="navbar-brand " [routerLink]="['/']"> Tu Voz Animal</a>
+    
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-white" [routerLink]="['/home']">Quines Somos</a>
+          </li>
+         
+
+          <li class="nav- nav-item" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link text-white" [routerLink]='["mascotaadd"]'>Agregar Mascota</a>
+          </li>
+
+          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+              <a class="nav-link text-white" [routerLink]='["adopcionadd"]'>Agregar Adopcion</a>
+          </li>
+          
+          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link text-white" [routerLink]='["mascotalist"]'>Consultar Mascotas</a>
+        </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

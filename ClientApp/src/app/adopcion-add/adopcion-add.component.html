@@ -1,0 +1,68 @@
+
+
+
+<div class="container">
+    <div class="row justify-content-center mt-4 pt-5 ">
+         <div class="col-md-7">
+          <h1 class="display-9">Adoptante </h1> 
+          <hr class="bg-info">
+          <p class="text-danger small">Todos los Campos son obligatorios.</p>
+
+
+  <div class=" row form-group">
+    <label class="col-form-label col-md-4" >Identificacion: </label>
+      <div class="col-md-8">
+            <input [(ngModel)]="adopcion.codpersonna" class="form-control" placeholder="Identificacion" type="text"/>
+    </div>
+</div>
+
+
+    <div class=" row form-group">
+    <label class="col-form-label col-md-4"> Nombre Completo:  </label>
+    <div class="col-md-8">
+            <input [(ngModel)]="adopcion.nombrecompleto" class="form-control" placeholder=" Nombre - Apelldo" type="text"/>
+    </div>
+    </div>
+
+
+    <div class="row form-group">
+    <label class="col-form-label col-md-4">Telefono: </label>
+    <div class="col-md-8">
+            <input [(ngModel)]="adopcion.telefono" class="form-control" placeholder="Telefono " type="text" />
+    </div>
+    </div>
+   
+
+    <div class=" row form-group">
+        <label class="col-form-label col-md-4" for="comment">Direccion:</label>
+        <div class="col-md-8">
+                <input [(ngModel)]= "adopcion.direccion" class="form-control" placeholder="Direccion" rows="4" id="Direccion" name="text"/>
+        </div>
+    </div>
+
+
+    <div class=" row form-group">
+        <label class="col-form-label col-md-4">Sexo: </label>
+        <div  class="col-md-8">
+                <select [(ngModel)]="adopcion.sexo" class="form-control" placeholder="Sexo" type="text">
+          
+                        <option>M</option>
+                        <option>F</option>
+                      </select>
+        </div>
+        </div>
+
+    <div class=" row form-group">
+        <label class="col-form-label col-md-4" for="comment">Edad:</label>
+        <div  class="col-md-8">
+                <input [(ngModel)]= "adopcion.edad" class="form-control" placeholder="Edad" rows="5" id="Edad" name="text"/>
+        </div>
+    </div>
+
+    <div class=" row form-group">
+    <button (click)="add()" class="btn btn-dark">Agregar</button>
+    </div>
+    
+     </div>
+  </div>
+</div>
